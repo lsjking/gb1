@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Skills</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 여기는 메뉴입니다. -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="about.html">About</a>
+          </li>
+          <li>
+            <a href="contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="skills.html">Skills</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 메인 섹션 -->
+    <section class="main">
+      <div class="container">
+        <h1>Skills (기술 스택), 나의 미래는 AI 엔지니어</h1>
+        <h3>🐯임성준(빛나는 호랑이)의 기술 소개🌟</h3>
+        <hr />
+        <p>현재시간: <span id="time"></span></p>
+        <p>
+          배경색 바꾸기:
+          <button onclick="pink()">Pink</button>
+          <button onclick="lightblue()">Lightblue</button>
+          <button onclick="yellow()">Yellow</button>
+          <button onclick="reset()">Reset</button>
+        </p>
+        <hr />
+        <h3>🤖👨‍💻 Programming Skills</h3>
+        <p>
+          아래는 내가 공부하고 진행중인 나의 미래에 대해서 생각을 하고 있는
+          AI개발 관련 기술 스택들이다.
+        </p>
+        <ul>
+          <li>Python - 딥러닝 / AI 기초 공부 중</li>
+          <li>C 언어 - 기본 문법 학습 예정</li>
+        </ul>
+        <hr />
+        <h3>🔐👨‍💻🚗Security Skills</h3>
+        <ul>
+          <li>정보보안 기초</li>
+          <li>네트워크 & 프로토콜</li>
+          <li>CAN 통신 및 CAN 게이트웨이 실습</li>
+        </ul>
+        <p>꾸준히 배워나가며 더 많은 스킬을 추가할 예정이다.🏋️🐅🌟</p>
+        <hr />
+        <p>
+          배워봅시다:
+          <a href="https://www.w3schools.com/python/default.asp">Python</a>,
+          <a href="https://www.w3schools.com/c/index.php">C</a>
+        </p>
+        <p>
+          언어 보기:
+          <button onmouseover="showpython()" onmouseout="hide()">Python</button>
+          <button onmouseover="showc()" onmouseout="hide()">C</button>
+        </p>
+        <hr />
+        <br />
+        <div>
+          <img id="fig" height="200px" />
+          <p id="desc"></p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>
