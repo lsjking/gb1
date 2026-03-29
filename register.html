@@ -1,0 +1,156 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>웹프로그래밍 데모</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- 여기는 메뉴입니다. -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="/skills.html">Skills</a>
+          </li>
+          <li>
+            <a href="/list.html">List</a>
+          </li>
+          <li>
+            <a href="/table.html">Table</a>
+          </li>
+          <li>
+            <a href="/media.html">Media</a>
+          </li>
+          <li>
+            <a href="/register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 메인섹션 -->
+    <section class="main">
+      <div class="container">
+        <h1>J.A.R.V.I.S 초기화</h1>
+        <p>
+          시스템 상태: <strong>ONLINE</strong><br />
+          사용자 식별 프로토콜을 시작합니다. <br />
+          <strong>주인님</strong>, 안내에 따라 정보를 입력해주십시오.
+        </p>
+        <form>
+          <fieldset>
+            <legend>👤 사용자 식별 단계</legend>
+            <label for="username">주인님의 이름을 입력하십시오.</label> <br />
+            <input type="text" id="username" />
+            <br /><br />
+            <label for="alias"
+              >JARVIS: 시스템에서 사용할 호출 명칭을 입력하십시오.</label
+            ><br />
+            <input type="text" id="alias" placeholder="주인님" />
+          </fieldset>
+          <fieldset>
+            <legend>🔐 접근 인증 단계</legend>
+            <label for="userid"> JARVIS: 시스템 접근 ID를 입력하십시오. </label
+            ><br />
+            <input type="text" id="userid" placeholder="접근 ID" /><br /><br />
+            <label for="password"> JARVIS: 보안 인증 키를 입력하십시오. </label
+            ><br />
+            <input type="password" id="password" />
+          </fieldset>
+          <fieldset>
+            <legend>⚙️ 사용자 환경 설정</legend>
+
+            <label for="email">
+              JARVIS: 연락 가능한 이메일 주소를 입력하십시오. </label
+            ><br />
+            <input
+              type="email"
+              id="email"
+              placeholder="example@email.com"
+            /><br /><br />
+
+            <label for="birth">
+              JARVIS: 주인님의 생성 일자를 입력하십시오. </label
+            ><br />
+            <input type="date" id="birth" /><br /><br />
+
+            <label for="trust"> JARVIS: 시스템 신뢰 수준을 설정하십시오. </label
+            ><br />
+            <input type="range" id="trust" min="0" max="100" />
+            <span>낮음 ↔ 높음</span><br /><br />
+
+            <label for="theme">
+              JARVIS: 인터페이스 테마 색상을 선택하십시오. </label
+            ><br />
+            <input type="color" id="theme" />
+          </fieldset>
+          <fieldset>
+            <legend>🎯 임무 영역 선택</legend>
+
+            <label> JARVIS: 수행할 임무를 선택하십시오. </label><br /><br />
+
+            <input type="checkbox" id="mission1" name="mission" />
+            <label for="mission1">시스템 보안</label><br />
+
+            <input type="checkbox" id="mission2" name="mission" />
+            <label for="mission2">네트워크 보안</label><br />
+
+            <input type="checkbox" id="mission3" name="mission" />
+            <label for="mission3">웹 보안</label><br />
+          </fieldset>
+          <br />
+
+          <input type="submit" value="프로토콜 완료" />
+          <input type="reset" value="초기화" />
+
+          <p>
+            ✅☑️✅☑️✅☑️ 등록이 완료되면 시스템 접근 권한이
+            활성화됩니다.✅☑️✅☑️✅☑️<br />
+            환영합니다, 주인님.
+          </p>
+          <fieldset>
+            <legend>🧠🦾👀💤 시스템 동작 모드</legend>
+
+            <label for="mode"> JARVIS: 기본 작동 모드를 선택하십시오. </label
+            ><br />
+            <select id="mode">
+              <option>분석 모드</option>
+              <option>학습 보조 모드</option>
+              <option>보안 감시 모드</option>
+              <option>대기 모드</option>
+            </select>
+          </fieldset>
+          <fieldset>
+            <legend>📜 추가 명령</legend>
+
+            <label for="note">
+              JARVIS: 추가로 남길 명령이나 메모가 있습니까? </label
+            ><br />
+            <textarea
+              id="note"
+              rows="4"
+              cols="40"
+              placeholder="예: 매일 18시에 학습 모드 실행"
+            ></textarea>
+          </fieldset>
+        </form>
+        <div>
+          <img id="fig" height="200px" />
+          <p id="desc"></p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

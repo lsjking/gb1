@@ -3,48 +3,152 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <title>강의 시간표</title>
     <style>
-      table,
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
       th,
       td {
-        border: 1px solid black;
+        border: 1px solid #333;
+        padding: 8px;
+        text-align: center;
+      }
+      th {
+        background-color: #eaeaea;
       }
     </style>
   </head>
   <body>
-    <table>
-      <caption>
-        상품 구성
-      </caption>
-      <tr>
-        <th>용도</th>
-        <th>중량</th>
-        <th>갯수</th>
-        <th>가격</th>
-      </tr>
-      <tr>
-        <td rowspan="2">선물용</td>
-        <td>3kg</td>
-        <td>11-16</td>
-        <td>35,000원</td>
-      </tr>
-      <tr>
-        <td>5kg</td>
-        <td>18-26</td>
-        <td>52,000원</td>
-      </tr>
-      <tr>
-        <td rowspan="2">가정용</td>
-        <td>3kg</td>
-        <td>11-16</td>
-        <td>30,000원</td>
-      </tr>
-      <tr>
-        <td>5kg</td>
-        <td colspan="2">18-26 35,000원</td>
-        <!-- <td>35,000원</td> -->
-      </tr>
-    </table>
+    <!-- 여기는 메뉴입니다. -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="/skills.html">Skills</a>
+          </li>
+          <li>
+            <a href="/list.html">List</a>
+          </li>
+          <li>
+            <a href="/table.html">Table</a>
+          </li>
+          <li>
+            <a href="/media.html">Media</a>
+          </li>
+          <li>
+            <a href="/register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 메인섹션 -->
+    <section class="main">
+      <div class="container">
+        <h1>강의 시간표</h1>
+
+        <p>현재 수강 중인 실제 전공 및 교양 과목 시간표</p>
+        <table>
+          <caption>
+            2026학년도 1학기 강의 시간표
+          </caption>
+          <tr>
+            <th>교시</th>
+            <th>월</th>
+            <th>화</th>
+            <th>수</th>
+            <th>목</th>
+            <th>금</th>
+          </tr>
+
+          <tr>
+            <th>09:00</th>
+            <td></td>
+            <td rowspan="2" class="web">웹프로그래밍</td>
+            <td rowspan="2" class="oop">객체지향프로그래밍</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>10:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>11:00</th>
+            <td rowspan="2" class="english">English for Global Citizens III</td>
+            <td rowspan="2" class="ds">보안자료구조</td>
+            <td rowspan="2" class="server">서버구축및운영실습</td>
+            <td rowspan="2" class="speaking">Public Speaking</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>12:00</th>
+            <td></td>
+          </tr>
+          <tr>
+            <th>13:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>14:00</th>
+            <td rowspan="2" class="web">웹프로그래밍</td>
+            <td rowspan="2" class="oop">객체지향프로그래밍</td>
+            <td></td>
+            <td rowspan="4" class="network">네트워크보안</td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>15:00</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>16:00</th>
+            <td rowspan="2" class="ds">보안자료구조</td>
+            <td rowspan="2" class="server">서버구축및운영실습</td>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>17:00</th>
+            <td></td>
+            <td></td>
+          </tr>
+          <tr>
+            <th>18:00</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+          </tr>
+        </table>
+
+        <div>
+          <img id="fig" height="200px" />
+          <p id="desc"></p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
   </body>
 </html>

@@ -36,3 +36,8 @@ function showc() {
   document.getElementById('desc').innerHTML =
     'C 언어는 시스템 프로그래밍과 임베디드 개발에 널리 사용되는 기본적인 언어이다.'
 }
+function showdreamhack() {
+  document.getElementById('fig').src = 'img/dreamhack.png'
+  document.getElementById('desc').innerHTML =
+    '드림핵은 보안 기초 개념과 취약점 원리를 실습 중심으로 학습할 수 있는 사이버보안 교육 플랫폼이다.'
+}

@@ -3,10 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>학습 미디어 자료</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <audio src="media/spring.mp3" autoplay loop></audio>
-    <video src="media/salad.mp4" width="700" autoplay muted loop></video>
+    <!-- 여기는 메뉴입니다. -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="/skills.html">Skills</a>
+          </li>
+          <li>
+            <a href="/list.html">List</a>
+          </li>
+          <li>
+            <a href="/table.html">Table</a>
+          </li>
+          <li>
+            <a href="/media.html">Media</a>
+          </li>
+          <li>
+            <a href="/register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 메인섹션 -->
+    <section class="main">
+      <div class="container">
+        <h1>학습 미디어 자료</h1>
+        <p>저작권 무료 오디오 (Pixabay)</p>
+        <audio src="media/audio.mp3" controls></audio>
+        <hr />
+        <h2>직접 제작한 학습 영상</h2>
+        <p>직접 촬영하여 제작한 자기소개 영상</p>
+        <video width="700" src="media/video.mp4" controls></video>
+        <div>
+          <img id="fig" height="200px" />
+          <p id="desc"></p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
   </body>
 </html>

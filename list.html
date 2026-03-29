@@ -3,62 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>컴퓨터 구조 학습 로드맵</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <ul>
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ul>
-    <ul style="list-style-type: circle">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ul>
-    <ul style="list-style-type: square">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ul>
-    <ul style="list-style-type: none">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ul>
-    <ol>
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-    <ol type="A">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-    <ol type="a">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-    <ol type="I">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-    <ol type="i">
-      <li>Coffee</li>
-      <li>Tea</li>
-      <li>Milk</li>
-    </ol>
-    <dl>
-      <dt>Coffee</dt>
-      <dd>-black hot drink</dd>
-      <dd>-커피</dd>
-      <dd>-카페라떼</dd>
-      <dt>Milk</dt>
-      <dd>-white cold drink</dd>
-      <dd>-흰 우유</dd>
-    </dl>
+    <!-- 여기는 메뉴입니다. -->
+    <nav class="navbar">
+      <div class="container">
+        <div class="logo">WebDemo</div>
+        <ul class="nav">
+          <li>
+            <a href="/">Home</a>
+          </li>
+          <li>
+            <a href="/about.html">About</a>
+          </li>
+          <li>
+            <a href="/contact.html">Contact</a>
+          </li>
+          <li>
+            <a href="/skills.html">Skills</a>
+          </li>
+          <li>
+            <a href="/list.html">List</a>
+          </li>
+          <li>
+            <a href="/table.html">Table</a>
+          </li>
+          <li>
+            <a href="/media.html">Media</a>
+          </li>
+          <li>
+            <a href="/register.html">Register</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 메인섹션 -->
+    <section class="main">
+      <div class="container">
+        <h1>사이버보안 학습의 핵심 관점</h1>
+        <hr />
+        <ul>
+          <li>사이버보안은 처음부터 바로 공부할 수 있는 학문이 아니다.</li>
+          <li>
+            컴퓨터가 어떻게 설계되고 구현되었는지 이해해야 보안을 쌓을 수 있다.
+          </li>
+          <li>보안, 해킹, 컴퓨터 구조는 서로 분리되지 않고 연결되어 있다.</li>
+          <li>하나의 분야에 대한 지식은 다른 영역에서도 활용된다.</li>
+        </ul>
+        <br />
+        <hr />
+        <h2>컴퓨터 구조 기반 보안 공부 순서</h2>
+        <hr />
+        <ol>
+          <li>컴퓨터 구조 이해</li>
+          <li>자료구조와 알고리즘</li>
+          <li>프로그래밍 언어 (Python, C 중심)</li>
+          <li>운영 체제</li>
+          <li>사이버보안 및 취약점 분석</li>
+        </ol>
+        <hr />
+        <h2>보안 공부 철학 설명</h2>
+        <hr />
+
+        <dl>
+          <dt>기술은 빠르게 변화한다</dt>
+          <dd>- 10년 전 공격 기법이 현재는 쓸모없는 경우가 많다.</dd>
+          <dd>- 중요한 것은 기술 자체보다 그 기술이 등장한 이유이다.</dd>
+
+          <dt>창과 방패의 반복적 발전</dt>
+          <dd>- 공격과 방어는 서로 영향을 주며 발전한다.</dd>
+          <dd>- 하나를 이해하면 다른 하나의 구조도 보인다.</dd>
+
+          <dt>기본기와 실습 중심 학습</dt>
+          <dd>- 직접 코드를 작성하고 구조를 구현해보는 것이 중요하다.</dd>
+          <dd>- 실제로 분석하고 실습해야 이해가 깊어진다.</dd>
+
+          <dt>복합적인 지식의 중요성</dt>
+          <dd>- 컴퓨터 구조, 운영체제, 프로그래밍 지식은 서로 연결된다.</dd>
+          <dd>- 이러한 복합적 이해가 창의적인 보안 사고로 이어진다.</dd>
+
+          <dt>전문 분야 선택</dt>
+          <dd>- 기본기를 쌓은 후 자신에게 맞는 보안 분야를 선택해야 한다.</dd>
+          <dd>- 깊이 있는 전문성이 중요하다.</dd>
+        </dl>
+        <hr />
+        <h2>실습 기반 보안 학습 플랫폼</h2>
+        <hr />
+        <p>
+          보안 공부는 이론에 머무르지 않고 실제로 코드를 보고 실습해보는 과정이
+          중요하다. 이를 위해 구조와 원리를 중심으로 학습할 수 있는 실습 기반
+          플랫폼을 활용하는 것이 도움이 된다.
+        </p>
+        <ul>
+          <li><a href="https://dreamhack.io/">Dreamhack</a></li>
+        </ul>
+        <p>
+          <button onmouseover="showdreamhack()" onmouseout="hide()">
+            Dreamhack
+          </button>
+        </p>
+        <div>
+          <img id="fig" height="200px" />
+          <p id="desc"></p>
+        </div>
+      </div>
+    </section>
+    <script src="main.js"></script>
   </body>
 </html>

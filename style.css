@@ -9,7 +9,7 @@ body {
   font-size: 18px;
   line-height: 1.5;
 }
-ul {
+.navbar ul {
   list-style-type: none;
 }
 .container {
@@ -67,4 +67,26 @@ button {
 button:hover {
   color: red;
   background-color: rgb(red, green, blue);
+}
+
+.web {
+  background-color: #c9e6ff;
+}
+.oop {
+  background-color: #c6f1d6;
+}
+.ds {
+  background-color: #d6ccff;
+}
+.server {
+  background-color: #ffe6b3;
+}
+.network {
+  background-color: #b3ecf0;
+}
+.english {
+  background-color: #ffd6d6;
+}
+.speaking {
+  background-color: #fff2b3;
 }
